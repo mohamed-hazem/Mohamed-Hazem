@@ -1,0 +1,62 @@
+<html lang="en">
+    
+    <head>
+        
+        <title>Graph Plotter</title>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/mathquill.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="function-mathematical-symbol.png">
+    
+    </head>
+    
+    
+    <body>
+
+        <div class="keyboard">
+
+            <div class="text-center graph-function">
+                <span id="f">f(x) =</span>
+                <span id="display"></span>
+                <button class="btn btn-danger" id="show-graph">Show Graph <img src="btn-icon%202.png" width="30px" height="30px" alt="Graph Icon"></button>
+
+                <!-- Default unchecked -->
+                <div class="custom-control custom-checkbox multi-function-box">
+                    <input type="checkbox" class="custom-control-input multi-function" id="defaultUnchecked">
+                    <label class="custom-control-label" for="defaultUnchecked">Multi Function</label>
+                </div>
+            </div>
+
+            <div class="text-center function-buttons">
+                <button class="keyboard-btn btn btn-dark" id="sqrt"><span id="sqrt-span">\sqrt{&#9633;}</span></button>
+                <button class="keyboard-btn btn btn-dark" id="nthrt"><span id="nthrt-span">\sqrt[&#9633;]{&#9633;}</span></button>
+                <button class="keyboard-btn btn btn-dark" id="pi">π</button>
+            </div>
+
+        </div>
+
+        <div class="container text-center">
+
+            <canvas id="paper" width="750" height="750"></canvas>
+
+        </div>
+    
+    
+    
+    
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/fontawesome.min.js"></script>
+        <script src="js/mathquill.js"></script>
+        <script src="js/latex-to-js.js"></script>
+        <script src="js/math.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/0.15.0/math.min.js"></script>
+        <script src="js/script.js"></script>
+
+        
+    </body>
+
+</html>
