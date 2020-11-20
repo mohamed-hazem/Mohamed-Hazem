@@ -139,7 +139,7 @@ def get_all_links(e_start, e_end):
 def sending_file(file_path, login):
 
     hotkey('ctrl', 't')
-    browser.get("https://www.facebook.com/messages/t/100005178106513")
+    browser.get("https://www.facebook.com/messages/t/<ID>")
     hotkey('ctrl', 'w')
     browser.switch_to.window(browser.window_handles[0])
 
@@ -148,8 +148,8 @@ def sending_file(file_path, login):
         passw = browser.find_element_by_xpath('//*[@id="pass"]')
         login = browser.find_element_by_xpath('//*[@id="loginbutton"]')
 
-        email.send_keys("mohamedhazem421@ymail.com")
-        passw.send_keys("mohamedfcb10")
+        email.send_keys("Your E-Mail")
+        passw.send_keys("Your Password")
         login.click()
 
     sleep(1)
@@ -229,7 +229,7 @@ for current_season in range(s_start - 1, int(s_end)):
         login = False
 
     # sending file via facebook
-    sending_file(new_file_path, login)
+    # sending_file(new_file_path, login)
 
     # exit in last season
     if current_season == int(s_end) - 1:
